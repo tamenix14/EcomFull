@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Adidas Nemesis",
+    "description": "Good",
+    "price": "233",
+    "ratings": 4.5,
+    "images": [
+      {
+        "public_id": "erhgrlicfmv2jgv3pomm",
+        "url": "https://res.cloudinary.com/dqtv9ecwq/image/upload/v1616301953/erhgrlicfmv2jgv3pomm.jpg"
+      }
+    ],
+    "category": "Cleats",
+    "seller": "Prodirectsoccer",
+    "stock": 50,
+    "numOfReviews": 32,
+    "reviews": [],
+    "color": "White",
+    "brand": "Adidas"
+  },
+  {
+    "name": "Nike Phantom GT React",
+    "description": "Bad",
+    "price": "212",
+    "ratings": 4.5,
+    "images": [
+      {
+        "public_id": "cfgirxwe7sqwmfrwmc3w",
+        "url": "https://res.cloudinary.com/dqtv9ecwq/image/upload/v1616479077/cfgirxwe7sqwmfrwmc3w.jpg"
+      }
+    ],
+    "category": "Cleats",
+    "seller": "Prodirectsoccer",
+    "stock": 50,
+    "numOfReviews": 32,
+    "reviews": [],
+    "color": "White",
+    "brand": "Nike"
+  }
+]
