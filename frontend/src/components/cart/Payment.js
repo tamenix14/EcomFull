@@ -39,7 +39,7 @@ const Payment = ({ history }) => {
   const { error } = useSelector((state) => state.newOrder);
 
   useEffect(() => {
-    window.reload();
+    window.location.reload(true);
     if (error) {
       alert.error(error);
       dispatch(clearErrors());
