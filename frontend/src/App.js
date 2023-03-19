@@ -26,9 +26,9 @@ import NewProduct from "./components/admin/NewProduct";
 import UpdateProduct from "./components/admin/UpdateProduct";
 import OrdersList from "./components/admin/OrdersList";
 import ProcessOrder from "./components/admin/ProcessOrder";
-import UsersList from "./components/admin/UsersList"
-import UpdateUser from "./components/admin/UpdateUser"
-import ProductReviews from "./components/admin/ProductReviews"
+import UsersList from "./components/admin/UsersList";
+import UpdateUser from "./components/admin/UpdateUser";
+import ProductReviews from "./components/admin/ProductReviews";
 
 import ProtectedRoute from "./components/routes/ProtectedRoute";
 import { loadUser } from "./actions/userActions";
@@ -88,6 +88,7 @@ const App = () => {
           <ProtectedRoute exact path="/orders/me" component={ListOrders} />
           <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
         </div>
+
         {/* Admin */}
         <ProtectedRoute
           exact
@@ -131,15 +132,13 @@ const App = () => {
           isAdmin={true}
           component={UsersList}
         />
-
         <ProtectedRoute
           exact
           path="/admin/user/:id"
           isAdmin={true}
           component={UpdateUser}
         />
-
-<ProtectedRoute
+        <ProtectedRoute
           exact
           path="/admin/reviews"
           isAdmin={true}
