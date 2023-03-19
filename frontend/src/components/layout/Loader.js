@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RingLoader from "react-spinners/RingLoader";
+// import RingLoader from "react-spinners/RingLoader";
 import { css } from "@emotion/core";
 
 const Loader = () => {
@@ -13,7 +13,8 @@ const Loader = () => {
 
   return (
     <div>
-      <RingLoader color={color} css={override} size={80} />
+      Loading
+      {/* <RingLoader color={color} css={override} size={80} /> */}
     </div>
   );
 };
