@@ -39,6 +39,7 @@ import ProductDetails from "./components/product/ProductDetails";
 // Payment
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+import Search from "./components/layout/Search";
 
 const App = () => {
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -74,7 +75,7 @@ const App = () => {
           />
           <Route exact path="/password/forgot" component={ForgotPassword} />
           <Route exact path="/password/reset/:token" component={NewPassword} />
-          <Route path="/search/:keyword" component={Home} />
+          <Route path="/search/:keyword" component={Search} />
           <Route exact path="/product/:id" component={ProductDetails} />
           <Route exact path="/cart" component={Cart} />
           <ProtectedRoute exact path="/shipping" component={Shipping} />

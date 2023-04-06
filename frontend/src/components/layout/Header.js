@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 import "../../App.css";
-import Search from "./Search";
+import SearchButton from "./SearchButton";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
@@ -26,13 +26,13 @@ const Header = () => {
           <div className="navbar-brand">
             {/* <img src="" alt="photo" /> */}
             <Link to="/">
-              <span style={{ color: "white" }}>Enyxs Sport</span>
+              <span style={{ color: "white" }}>Enix Sport</span>
             </Link>
           </div>
         </div>
 
         <div className="col-12 col-md-6 mt-2 mt-md-0">
-          <Route render={({ history }) => <Search history={history} />} />
+          <Route render={({ history }) => <SearchButton history={history} />} />
         </div>
 
         <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
